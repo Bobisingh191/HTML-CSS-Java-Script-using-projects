@@ -1,0 +1,112 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticy Navbar</title>
+    <style>
+        body{
+            margin:0px;
+        }
+        #header{
+            text-align:left;
+
+        }
+        #logo{
+            width:80px;
+            height:auto;
+            padding:20px;
+            
+
+        }
+        #menu-bar{
+            text-align:center;
+            background-color:cadetblue;
+            
+
+        }
+        #menu-bar li{
+            display:inline-block;
+            padding:15px 10px;
+            color:white;
+            font-size:20px;
+            font-weight:bold;
+
+        }
+        #container{
+            text-align:center;
+            padding:50px 100px;
+
+
+        }
+        img{
+            width:100%;
+        }
+        p{
+            text-align:justify;
+            font-size: 20px;
+        
+        }
+        .sticky{
+            position:fixed;
+            top:0;
+            width:100%;
+        }
+        marquee{
+            font-weight:bold;
+            font-size:20px;
+            color:green;
+
+
+        }
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div id="header">
+        <img src="images logo.png" id="logo" alt="logo">
+    </div>
+    
+    <nav id="menu-bar">
+        <li> Home</li>
+        <li>About</li>
+        <li>Contact Us</li>
+        <li> Gallery</li>
+        <li>Services</li>
+    </nav>
+    
+    <div id="container">
+        <marquee> Hello, This is my own Project</marquee>
+        <h1>About Us</h1>
+        <img src="About.jpg" id="about-img" alt="about us">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <mark><em>Minus, eos earum</em></mark>? Asperiores nisi ratione mollitia qui nemo, <bold>repudiandae impedit obcaecati</bold>. Ipsum minima eum sequi <q>laudantium error nemo distinctio est modi voluptatibus</q>. Nobis nesciunt incidunt, quibusdam quod nemo quos dolor enim. Voluptate ducimus ex eius fuga, veritatis odit vel consequatur illo repellat ea deserunt possimus quidem, quaerat repellendus, quibusdam quas cupiditate consequuntur expedita laborum sequi voluptatum voluptates necessitatibus tempora odio. A ex necessitatibus nulla quam quod eligendi minima commodi? Rerum error recusandae consequatur sunt vero accusantium sed numquam soluta! Voluptate excepturi facilis eveniet vel, aut quis mollitia asperiores deserunt. Ut doloremque dolor sapiente qui culpa accusamus fugiat vitae officia blanditiis, hic ullam architecto rem voluptatem possimus dignissimos ad cumque molestias quis deleniti, facilis adipisci sunt inventore explicabo dolorum. Similique quaerat odit pariatur culpa vero voluptas quisquam quos adipisci distinctio esse facere qui consequuntur, earum ab, maxime repellendus quidem maiores deleniti! Pariatur ducimus harum natus beatae veniam eius, dolores distinctio similique reprehenderit soluta vitae quae ab quisquam voluptate rem optio earum repudiandae recusandae deserunt itaque tenetur unde neque repellat perferendis. Blanditiis commodi repellendus minus tenetur magnam repellat eveniet quos provident culpa laudantium? Incidunt accusamus cupiditate provident eum dolor, harum ad consequuntur impedit unde aperiam illum, placeat sunt ab! Exercitationem culpa voluptate explicabo ad laudantium molestias magnam error nihil temporibus expedita iusto eveniet dolore ut odit cumque iure quo eius, incidunt consequuntur quasi? Expedita tenetur rem, totam eius sequi molestiae ea qui? Assumenda sapiente quibusdam dicta eaque vitae quos aut iure sequi suscipit quasi eum, officia dignissimos unde nulla nisi veniam praesentium odio quia nobis sit pariatur beatae, amet eligendi. Explicabo asperiores culpa modi nihil veritatis fuga dolore optio ratione illum et eum aut doloribus facere, esse animi facilis quas soluta delectus consequatur repudiandae natus voluptatum corrupti! Consequatur perspiciatis fugit maiores omnis qui perferendis ad inventore nam commodi dolorem, soluta aspernatur repudiandae voluptates. Praesentium, laudantium quaerat, modi impedit, voluptas omnis quod dignissimos maxime rerum voluptatum exercitationem. Eius nulla delectus id. Ad, quae sit odit quas cum veniam magni eveniet soluta itaque ullam nam consectetur perspiciatis! Aspernatur neque exercitationem eveniet sunt ex totam, tempore vitae modi dolorum! Enim fugiat quibusdam exercitationem ut vel sit eos rerum repellat officia nesciunt ad, incidunt consequuntur magni recusandae porro dolorum? Assumenda atque consectetur unde, quidem laboriosam facere voluptatum necessitatibus! Ad eligendi odio, a tenetur numquam neque quasi sed consequuntur harum voluptas sunt inventore iste! Asperiores accusamus doloribus ratione reprehenderit a necessitatibus rem, suscipit nam iste quo. Temporibus porro quis repellendus doloribus quam dolores aut accusantium. Nam voluptatibus doloribus enim quisquam perferendis sint ut laboriosam ipsum assumenda, molestias suscipit expedita molestiae dolorum corporis ducimus excepturi repellendus? Assumenda laborum fugiat perspiciatis repellendus praesentium quas dolor, doloremque aut itaque deleniti, quaerat voluptatem porro consequuntur dolorum quos obcaecati reprehenderit enim nemo. Esse optio iste, minima voluptates dolores ut nobis recusandae eligendi quia pariatur maxime officia rerum, impedit reiciendis quo sint culpa incidunt quis cum molestiae est numquam architecto nisi sequi! Omnis, asperiores vel similique corrupti praesentium saepe velit? Quaerat quidem beatae veniam.</p>
+        
+    </div>
+
+    <script>
+        window.addEventListener('scroll',function(){
+            let navbar = document.getElementById('menu-bar');
+            if(window.pageYOffset >= 190){
+                navbar.classList.add('sticky');
+            }
+            else{
+                navbar.classList.remove('sticky');
+
+            }
+
+
+        });
+    </script>
+
+
+
+    
+</body>
+</html>
